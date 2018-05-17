@@ -85,6 +85,9 @@
 
 
 <body style="min-height:100%;">
+	<?php
+		echo "我的第一段 PHP 脚本！";
+	?>
 
 	<!--<hr style="color:#77777" ></hr>-->
 	<!-- Flashed messages and actual body content -->
@@ -122,99 +125,46 @@
 			<div class="row">
 				<div class='col-md-12'>
 					<div class="well">
-
-						<h5>Recent sentiment: <button class="btn btn-default btn-sm" style="background:#fb9414">Poor</button></h5>
-
-						<h5>Related keywords, volume, and sentiment:</h5>
+						<h3>Input Arguments</h3>
 						<button class="btn btn-default" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
 							How this section works
 						</button>
 						<div class="collapse" id="collapseExample">
 							<div class="well">
-								<p>These are popular keywords around the main political keyword of this page (you are currently viewing related terms and sentiment for crime.)</p>
-								<p>Size denotes amounts of mentions of the topic related to the political keyword / politician.</p>
 								<p>Color is the overall sentiment, where
 									<span class="text-success"><strong>green is very positive</strong></span>, <span class="text-info"><strong>blue is positive</strong></span>, no color is neutral, <span class="text-warning"><strong>orange is negative</strong></span>, and
 									<span
 									class="text-danger"><strong>red is very negative</strong></span>.
-								</p> Click on the word to view related news links.
 							</div>
 						</div>
 
-
 						<p>
-							<span class="spoiler">
-								<div class="spoiler-btn" style="display: inline"><button class="btn btn-danger btn-sm">twitter</button></div>
-								<div class="spoiler-body collapse">
-									<br><p>Related Links:</p>
-
-
-									<h1 style="font-size: 140.0%"><a href="http://www.usatoday.com/story/news/politics/onpolitics/2017/06/26/conservative-pundits-colluding-russia-isnt-crime/103204036/" target="blank"><strong>http://www.usatoday.com/story/news/politics/onpolitics/2017/06/26/conservative-pundits-colluding-russia-isnt-crime/103204036/</strong></a></h1>
-
-
-
-								</div>
-							</span>
-
-							<span class="spoiler">
-								<div class="spoiler-btn" style="display: inline"><button class="btn btn-warning btn-sm">World</button></div>
-								<div class="spoiler-body collapse">
-									<br><p>Related Links:</p>
-
-
-									<h1 style="font-size: 140.0%"><a href="http://www.foxnews.com/politics/2018/05/09/trump-says-will-meet-freed-americans-when-land-in-dc-area-early-thursday-morning.html" target="blank"><strong>http://www.foxnews.com/politics/2018/05/09/trump-says-will-meet-freed-americans-when-land-in-dc-area-early-thursday-morning.html</strong></a></h1>
-
-
-
-
-								</div>
-							</span>
-
-							<span class="spoiler">
-								<div class="spoiler-btn" style="display: inline"><button class="btn btn-warning btn-md">pundits</button></div>
-								<div class="spoiler-body collapse">
-									<br><p>Related Links:</p>
-
-
-									<h1 style="font-size: 140.0%"><a href="http://www.usatoday.com/story/news/politics/onpolitics/2017/06/26/conservative-pundits-colluding-russia-isnt-crime/103204036/" target="blank"><strong>http://www.usatoday.com/story/news/politics/onpolitics/2017/06/26/conservative-pundits-colluding-russia-isnt-crime/103204036/</strong></a></h1>
-
-
-
-								</div>
-							</span>
-
-							<span class="spoiler">
-								<div class="spoiler-btn" style="display: inline"><button class="btn btn-warning btn-lg">Russia</button></div>
-								<div class="spoiler-body collapse">
-									<br><p>Related Links:</p>
-
-
-									<h1 style="font-size: 80.0%"><a href="http://www.foxnews.com/politics/2018/05/10/nunes-gowdy-meet-with-doj-officials-amid-russia-probe-standoff.html" target="blank"><strong>http://www.foxnews.com/politics/2018/05/10/nunes-gowdy-meet-with-doj-officials-amid-russia-probe-standoff.html</strong></a></h1>
-
-
-
-
-
-
-								</div>
-							</span>
-
-							<span class="spoiler">
-								<div class="spoiler-btn" style="display: inline"><button class="btn btn-danger btn-sm">Personalities</button></div>
-								<div class="spoiler-body collapse">
-									<br><p>Related Links:</p>
-
-
-									<h1 style="font-size: 140.0%"><a href="http://www.foxnews.com/politics/2018/05/09/trump-says-will-meet-freed-americans-when-land-in-dc-area-early-thursday-morning.html" target="blank"><strong>http://www.foxnews.com/politics/2018/05/09/trump-says-will-meet-freed-americans-when-land-in-dc-area-early-thursday-morning.html</strong></a></h1>
-
-
-
-
-								</div>
-							</span>
 						</p>
-					</div>
 
+						<div class="contact-form">
+							<div class="text">
+								<input type="text" value="Price(20-50)" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'Price';}"/>
+							</div><br>
+							<div class="text">
+								<input type="text" value="DG Max Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Max Product';}"/>
+							</div><br>
+							<div class="text">
+								<input type="text" value="DG Min Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Min Product';}"/>
+							</div><br>
+							<div class="text">
+								<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message
+								</textarea>
+							</div><br>
+							<a href="/financial-analysis/">
+								<button type="button" class="btn btn-primary">
+									<span class="glyphicon glyphicon-signal"></span> submit
+								</button>
+							</a>
+						 </div>
+						</div>
+					</div>
+				</div>
+			</div>
 
 
 					<div class="btn-group btn-group-justified" style="margin-left: 100px">
@@ -232,23 +182,10 @@
 								</a>
 							</div>
 							<div class="btn-group">
-								<a href="/political-analysis/?i=crime&tf=6m">
-									<button type="button" class="btn btn-default navbar-btn">6 months</button>
-								</a>
-							</div>
-							<div class="btn-group">
-								<a href="/political-analysis/?i=crime&tf=1y">
-									<button type="button" class="btn btn-default navbar-btn">1 Year</button>
-								</a>
-							</div>
-							<div class="btn-group">
 								<a href="/political-analysis/?i=crime&tf=all">
 									<button type="button" class="btn btn-default navbar-btn">All-Time</button>
 								</a>
 							</div>
-
-
-
 						</div>
 					</div>
 					<div class="container-fluid" style="margin-left:50px">
@@ -260,9 +197,10 @@
 
 
 					<div id=chart_ID class="chart" style="max-height: 500px"></div>
-
+  	      <script src="http://d3js.org/d3.v3.min.js"></script>
 					<script>
-					var chart_id = chart_ID
+					var chart_id = chart_ID;
+					var parseDate = d3.time.format("%Y%m%d").parse;
 					var series = [{
 						'color': '#bdbdbd',
 						'type': 'column',
@@ -604,7 +542,7 @@
 							[1525910400000, 1401],
 							[1525996800000, 227]
 						],
-						'name': 'Sentiment Volume',
+						'name': 'DG Output',
 						'yAxis': 1
 					}, {
 						'color': '#333333',
@@ -947,7 +885,7 @@
 							[1525947883037.8818, -2.5313774706205217],
 							[1526005098514.0974, -2.486254815063312]
 						],
-						'name': 'Short Term Sentiment'
+						'name': 'Battery Charge'
 					}, {
 						'color': '#04BAE3',
 						'type': 'line',
@@ -1289,10 +1227,10 @@
 							[1525947883037.8818, -2.329932009278013],
 							[1526005098514.0974, -2.324420479218528]
 						],
-						'name': 'Long Term Sentiment'
+						'name': 'Power Purchase'
 					}]
 					var title = {
-						'text': 'Crime Sentiment Analysis'
+						'text': 'Micro Grid Dispatch Result'
 					}
 					var xAxis = [{
 						'type': 'datetime'
@@ -1314,8 +1252,8 @@
 					}
 					var colors = ['#04BAE3', '#333333', '#90ed7d', '#f7a35c', '#8085e9', '#f15c80', '#e4d354', '#8085e8', '#8d4653', '#91e8e1', '#7cb5ec', '#434348']
 					var credits = {
-						"text": "Sentdex",
-						"href": "http://sentdex.com"
+						"text": "CSC",
+						"href": "csc-lab.com.cn"
 					}
 					</script>
 
@@ -1338,7 +1276,6 @@
 										<th align="center">Topic</th>
 
 										<th>1Y Volume of Mentions</th>
-
 
 										<th>Sentiment</th>
 										<th>Rising or Falling</th>
