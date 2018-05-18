@@ -55,39 +55,14 @@
 <header>
 	<div class="navbar-header">
 		<a class="navbar-brand" rel="home" href="" title="Sentdex Analysis">
-			<img style="max-height:90px; max-width:100%; margin-top: -5px;" src="./images/sentdex-long-banner-dark.png">
+			<img style="max-height:90px; max-width:100%; margin-top: -5px;" src="./images/labLogo-b.png">
 		</a>
-	</div>
-
-	<div class="container">
-		<ul class="nav navbar-nav navbar-right">
-			<ul class="nav nav-pills">
-				<a href="/financial-analysis/">
-					<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 5px; height:35px; margin-right: 5px; margin-left: 15px">
-						<span class="glyphicon glyphicon-signal"></span> Finance
-					</button>
-				</a>
-				<a href="/political-analysis/">
-					<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 5px; height:35px;">
-						<span class="glyphicon glyphicon-king"></span> Politics
-					</button>
-				</a>
-				<a href="/geographical-analysis/">
-					<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 5px; height:35px; margin-left: 5px; margin-right: 5px">
-						<span class="glyphicon glyphicon-globe"></span> Geographical
-					</button>
-				</a>
-			</ul>
-		</ul>
 	</div>
 	<br><br>
 </header>
 
 
 <body style="min-height:100%;">
-	<?php
-		echo "我的第一段 PHP 脚本！";
-	?>
 
 	<!--<hr style="color:#77777" ></hr>-->
 	<!-- Flashed messages and actual body content -->
@@ -95,17 +70,26 @@
 
 		<body class="body">
 
-			<ul class="nav nav-pills">
-
-				<li role="presentation" class="active">
-					<a href="/political-analysis/">Political Topics</a>
-				</li>
-
-				<li role="presentation">
-					<a href="/political-analysis/us-politicians/">US Politicians</a>
-				</li>
-
-			</ul>
+			<div class="container">
+				<ul class="nav navbar-nav navbar-right">
+					<ul class="nav nav-pills">
+						<a href="/financial-analysis/">
+							<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 20px; height:35px; margin-right: 5px; margin-left: 15px">
+								Finance
+							</button>
+						</a>
+						<a href="/political-analysis/">
+							<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 20px; height:35px;"> Politics
+							</button>
+						</a>
+						<a href="/geographical-analysis/">
+							<button type="button" class="btn btn-primary" style=" margin-top: 38px; margin-bottom: 20px; height:35px; margin-left: 5px; margin-right: 5px">
+							Geographical
+							</button>
+						</a>
+					</ul>
+				</ul>
+			</div>
 			<br><br>
 			<div class="container">
 				<!--<h4>crime -  - Sentiment Analysis<h4>-->
@@ -142,29 +126,21 @@
 						</p>
 
 						<div class="contact-form">
-							<div class="text">
-								<input type="text" value="Price(20-50)" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'Price';}"/>
-							</div><br>
-							<div class="text">
-								<input type="text" value="DG Max Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Max Product';}"/>
-							</div><br>
-							<div class="text">
-								<input type="text" value="DG Min Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Min Product';}"/>
-							</div><br>
-							<div class="text">
-								<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message
-								</textarea>
-							</div><br>
-							<a href="/financial-analysis/">
-								<button type="button" class="btn btn-primary">
-									<span class="glyphicon glyphicon-signal"></span> submit
-								</button>
-							</a>
-						 </div>
+							<div class="text" >
+								<form action="./welcome.php" method="post">
+									<input type="text" value="Price(20-50)" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'Price';}"/>
+									<input type="text" value="DG Max Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Max Product';}"/>
+									<input type="text" value="DG Min Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Min Product';}"/>
+									<br><br>
+									<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message
+									</textarea>
+									<br><br>
+									<input type="submit" <button type="button" class="btn btn-primary"></button>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
 
 					<div class="btn-group btn-group-justified" style="margin-left: 100px">
@@ -188,6 +164,7 @@
 							</div>
 						</div>
 					</div>
+
 					<div class="container-fluid" style="margin-left:50px">
 						<div class="collapse" id="instrumentsearch" style="margin-right:100px">
 							<div class="panel panel-primary"></div>
@@ -1328,224 +1305,6 @@
 
 									</tr>
 
-									<tr valign="center" onclick="document.location='/political-analysis/?i=environment&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="./images/Environmental.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Environment</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;534158</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" style="color:#ff6b50"></span></td>
-
-
-									</tr>
-
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=tobacco&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/Tobacco.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Tobacco</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;5772</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up" style="color:#6bc363"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=gay%20marriage&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/GayRights.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Gay Marriage</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;5070</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up" style="color:#6bc363"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=medical%20marijuana&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/MedicalMarijuana.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Medical Marijuana</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;3254</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#86d200">good</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" style="color:#ff6b50"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=censorship&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/censorship.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Censorship</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;2578</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" style="color:#ff6b50"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=clean%20energy&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/CleanEnergy.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Clean Energy</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;2352</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#51d200">very good</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" style="color:#ff6b50"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=war%20on%20terror&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/WarOnTerror.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;War on Terror</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;2059</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up" style="color:#6bc363"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=capital%20punishment&tf=30d'" style="cursor:pointer">
-										<td valign="center"><img class="img-responsive" style="max-width:50px" src="/static/images/politics/CapitalPunishment.png" /></td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Capital Punishment</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;1127</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#fb9414">poor</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up" style="color:#6bc363"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=stem%20cell&tf=30d'" style="cursor:pointer">
-										<td valign="center">
-											<img class="img-responsive" style="max-width:50px" src="/static/images/politics/stemcell.png" />
-										</td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Stem Cell Research</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;973</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#86d200">good</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-up" style="color:#6bc363"></span> </td>
-
-
-									</tr>
-
-									<tr valign="center" onclick="document.location='/political-analysis/?i=libertarian&tf=30d'" style="cursor:pointer">
-										<td valign="center">
-											<img class="img-responsive" style="max-width:50px" src="/static/images/politics/libertarian.png" />
-										</td>
-
-
-										<!-- name -->
-										<td valign="center">&nbsp;&nbsp;Libertarianism</td>
-
-										<!-- volume -->
-										<td valign="center">&nbsp;&nbsp;897</td>
-
-										<!-- recent sentiment -->
-										<td valign="center">&nbsp;&nbsp;<button class="btn btn-default btn-sm" style="background:#86d200">good</button></td>
-
-										<!-- direction -->
-
-
-										<td valign="center">&nbsp;&nbsp;<span class="glyphicon glyphicon-chevron-down" style="color:#ff6b50"></span> </td>
-
-
-									</tr>
-
-
-
-
 
 								</tbody>
 							</table><br><br><br><br>
@@ -1619,26 +1378,6 @@
 
 				</ul>
 
-			</div>
-
-			<div class="col-md-2">
-				<ul style="list-style-type: none;">
-					<li><strong>Sentiment Analysis and Sentdex</strong></li>
-					<li><a href="/sentiment-analysis/">How Sentiment Analysis Works</a></li>
-					<li><a href="/about/how-to-use-sentiment-analysis">How to use Sentiment Analysis</a></li>
-					<li><a href="/blog/back-testing-sentdex-sentiment-analysis-signals-for-stocks">Sentiment Back-Tested</a></li>
-
-
-				</ul>
-
-			</div>
-			<div class="col-md-2">
-				<ul style="list-style-type: none;">
-
-					<li><strong>Social</strong></li>
-					<li><a href="https://plus.google.com/+sentdex" target="_blank">Google+</a></li>
-
-				</ul>
 			</div>
 
 
