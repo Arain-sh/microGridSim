@@ -70,7 +70,7 @@
 
 		<body class="body">
 
-			<div class="container">
+			<div class="container" style=" margin-top: 36px">
 				<ul class="nav navbar-nav navbar-right">
 					<ul class="nav nav-pills">
 						<a href="/financial-analysis/">
@@ -127,13 +127,16 @@
 
 						<div class="contact-form">
 							<div class="text" >
-								<form action="./welcome.php" method="post">
-									<input type="text" value="Price(20-50)" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'Price';}"/>
-									<input type="text" value="DG Max Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Max Product';}"/>
-									<input type="text" value="DG Min Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Min Product';}"/>
+								<form action="./submit.php" method="post" enctype="multipart/form-data">
+									<input type="text" name="price" value="Price(20-50)" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'Price(20-50)';}"/>
+									<input type="text" name="DGMax" value="DG Max Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Max Product';}"/>
+									<input type="text" name="DGMin" value="DG Min Product" onfocus="this.value = '';" onblur="if (this.value	== '') {this.value = 'DG Min Product';}"/>
 									<br><br>
-									<textarea value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message
+									<textarea name="Message" value="Message:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message';}">Your Message
 									</textarea>
+									<br><br>
+									<label for="file">Filename:</label>
+									<input type="file" name="file" id="file" />
 									<br><br>
 									<input type="submit" <button type="button" class="btn btn-primary"></button>
 								</form>
@@ -1320,10 +1323,6 @@
 
 			</div>
 			<br><br>
-
-
-
-
 
 
 		</body>
